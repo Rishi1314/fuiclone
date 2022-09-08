@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Herocard from './Herocard'
+import About from './About'
+import UnderAbout from './UnderAbout'
+import WhyTutor from './WhyTutor'
+import StayConnected from './StayConnected'
+import TrainingOver from './TrainingOver'
+import Who from './Who'
+import Footer from './Footer'
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Herocard/>
+    <About/>
+    <UnderAbout/>
+    <WhyTutor/>
+    <StayConnected/>
+    <TrainingOver/>
+    <Who/>
+    <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
